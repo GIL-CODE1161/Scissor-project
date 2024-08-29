@@ -1,0 +1,262 @@
+.url-page {
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  padding: 7rem 2rem;
+  transition: all 3s ease-in;
+}
+
+.loading {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 4rem;
+}
+
+em {
+  word-break: break-all;
+}
+
+.no-link {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin: 4rem 0 12rem;
+}
+
+.filter-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 2rem 4rem;
+}
+
+.sort-btn {
+  padding: 0.4rem 0.8rem;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.search-input {
+  max-width: 50rem;
+  width: 100%;
+  align-self: center;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(43, 51, 81, 0.651);
+  color: #f1f4f8;
+}
+
+.search-input::placeholder {
+  color: #f1f4f8;
+}
+
+.main-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin: 0 2rem;
+}
+
+.url-container {
+  position: relative;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  border-radius: 12px;
+}
+
+.url-container > div {
+  max-width: 44rem;
+  width: 100%;
+  padding: 2rem;
+  margin-right: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.long-link {
+  border-left: 1px solid #0065fe;
+  border-bottom: 1px solid #0065fe;
+  background-color: rgba(153, 194, 255, 0.2);
+  overflow: scroll;
+  word-break: break-all;
+  width: 100%;
+  height: 40px;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  padding: 0.4rem 1rem 0.4rem 0.8rem;
+}
+
+.short-link {
+  font-family: "Gilroy-Bold", sans-serif;
+  display: flex;
+  gap: 2.8rem;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.url-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.url-btns button {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 2.4rem;
+  gap: 2px;
+}
+
+.url-btns button:hover,
+.sort-btn:hover {
+  filter: brightness(80%);
+}
+
+button.delete-btn {
+  outline: none;
+  padding: 0;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 8%;
+  right: 2%;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 100%;
+  color: #f1f4f8;
+}
+
+.delete-btn:hover,
+.delete-btn:active {
+  color: #0065fe;
+}
+
+.url-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4rem 2rem;
+}
+
+.pagination-ctrls {
+  display: flex;
+}
+
+.pagination-ctrls button {
+  width: 9rem;
+  padding: 0.8rem;
+}
+
+.pagination-ctrls button:is(:not(.white-btn)) {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.pagination-ctrls button:hover {
+  filter: brightness(84%);
+}
+
+.pagination-ctrls button:disabled {
+  filter: brightness(50%);
+}
+
+.dots {
+  margin: 0 2.4rem 1rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  color: #f1f4f8;
+}
+
+.dots .page {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  border: 1px solid #0065fe;
+  background-color: #f1f4f8;
+  cursor: pointer;
+}
+
+.dots .page-active {
+  background-color: #0065fe;
+}
+
+.url-nav .sort-btn {
+  gap: 0.2rem;
+  align-self: center;
+  margin: 6rem 2rem 0;
+}
+
+.sort-btn .magic-wand {
+  width: 16%;
+}
+
+.sort-btn .magic-wand {
+  width: 16%;
+  filter: grayscale(100%) invert(100%);
+}
+
+.share-component {
+  position: relative;
+  max-width: 40rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 9;
+  border-radius: 12px;
+  padding: 2.4rem;
+  background-color: #292e3c;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
+
+.share-socials {
+  display: flex;
+  gap: 2rem;
+}
+
+.share-socials button {
+  padding: 0.4rem;
+  outline: none;
+  border: none;
+}
+
+.share-socials button:hover {
+  filter: brightness(80%);
+}
+
+.share-socials a {
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 1.2rem 4rem;
+  border-radius: 20px;
+  background-color: #cce0ff;
+  color: #1f2128;
+}
+
+a.confirm-btn {
+  color: #f1f4f8;
+  margin-right: 1.6rem;
+  background-color: #0065fe;
+}

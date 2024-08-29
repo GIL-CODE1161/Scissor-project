@@ -1,0 +1,72 @@
+.faq {
+  position: relative;
+  margin: 4.3rem auto 15.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.faq-intro {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 3.7rem;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.faq-intro img {
+  filter: grayscale(100%) invert(100%);
+}
+
+.faq-block {
+  z-index: 1;
+  max-width: 79.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.faq-text {
+  line-height: 3.2rem;
+  border-bottom: 1.5px solid #d6d6d6;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: center;
+  column-gap: 2.4rem;
+  transition: all 0.3s ease-out;
+}
+
+.faq-text p:first-child {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.faq-text > img {
+  cursor: pointer;
+  filter: grayscale(100%) invert(100%);
+}
+
+.faq-text > img:active {
+  transform: translateY(1px);
+}
+
+.open {
+  grid-column: 1/-1;
+}
+
+.faq-left {
+  position: absolute;
+  right: 0;
+  bottom: -15.5rem;
+  height: 50%;
+  width: fit-content;
+}
+
+.faq-right {
+  position: absolute;
+  left: 0;
+  top: -4.3rem;
+  height: 87%;
+  width: fit-content;
+}
